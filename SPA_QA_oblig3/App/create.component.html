@@ -1,0 +1,46 @@
+﻿<div class="container">
+    <p class="alert alert-success" *ngIf="submitted">{{successMessage}}</p>
+    <form #createForm="ngForm" [formGroup]="form" (ngSubmit)="submitQuestion()">
+        <div class="col-sm-9 col-sm-offset-2">
+
+            <!--GROUP-->
+            <div class="form-group">
+                <label>
+                    Your name:
+                </label>
+                <input class="form-control" formControlName="name" />
+                <p class="alert alert-danger" [hidden]="form.controls.name.valid  || form.controls.name.pristine">Name cannot be empty!</p>
+            </div>
+
+            <!--GROUP-->
+            <div class="form-group">
+                <label>
+                    Your email
+                </label>
+                <input class="form-control" formControlName="email" />
+                <p class="alert alert-danger" [hidden]="form.controls.email.valid  || form.controls.email.pristine">Invalid email!</p>
+            </div>
+
+            <!--GROUP-->
+            <div class="form-group">
+                <label>
+                    Select category of your question:
+                </label>
+                <select class="form-control" formControlName="category">
+                    <option *ngFor="let c of categories" value="{{c.Id}}">{{c.Name}}</option>
+                </select>
+            </div>
+
+            <!--GROUP-->
+            <div class="form-group">
+                <label>
+                    What is your question?
+                </label>
+                <textarea class="form-control " formControlName="asked" rows="4"></textarea>
+                <p class="alert alert-danger" [hidden]="form.controls.asked.valid  || form.controls.asked.pristine">Max 300 characters</p>
+            </div>
+            <button class="btn btn-success" type="submit" [disabled]="!createForm.form.valid">Submit question</button>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,25 @@
+﻿<div class="container">
+
+    <div class="row">
+        <div class="col-sm-3">
+            <h3>Select category:</h3>
+        </div>
+    </div>
+    <div class="row">
+        <!--Categories-->
+        <accordion>
+            <accordion-group *ngFor="let c of categories" heading="{{c.Name}}">
+                <!--Questions-->
+                <accordion>
+
+                    <accordion-group *ngFor="let q of c.Questions" heading="{{q.asked}}">
+                        <label *ngIf="q.isFAQ">&#9734;FAQ&#9734;</label>
+                        {{q.answer}}
+                    </accordion-group>
+                </accordion>
+
+            </accordion-group>
+        </accordion>
+    </div>
+
+</div>
