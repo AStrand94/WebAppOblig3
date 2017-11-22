@@ -13,6 +13,7 @@ export class QuestionsComponent {
     private name = 'QuestionsComponent';
     public questions: Array<Question> = new Array();
     public categories: Array<Category> = new Array();
+    query: string = '';
 
     constructor(private _http: Http) { }
 

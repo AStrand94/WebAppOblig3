@@ -22,6 +22,12 @@ namespace SPA_QA_oblig3.Models
                 Name = "Payment"
             };
 
+            Category c3 = new Category
+            {
+                Id = 1,
+                Name = "Luggage"
+            };
+
             Question q1 = new Question
             {
                 Id = 0,
@@ -34,8 +40,8 @@ namespace SPA_QA_oblig3.Models
                 IsFAQ = true
             };
 
-        Question q2 = new Question
-        {
+            Question q2 = new Question
+            {
             Id = 1,
             Asked = "I payed too much",
             Answer = "Sorry",
@@ -46,11 +52,51 @@ namespace SPA_QA_oblig3.Models
             IsFAQ = true
             };
 
+            Question q3 = new Question
+            {
+                Id = 2,
+                Asked = "How do i get a refund?",
+                Answer = "No clue",
+                Answered = true,
+                Category = c2,
+                AskedBy = "Fridtjof",
+                Email = "fridtjof@yolo.net",
+                IsFAQ = true
+            };
+
+            Question q4 = new Question
+            {
+                Id = 3,
+                Asked = "When do you get flights to USA?",
+                Answer = "Tomorrow",
+                Answered = true,
+                Category = c1,
+                AskedBy = "Per",
+                Email = "per69@yolo.net",
+                IsFAQ = true
+            };
+
+            Question q5 = new Question
+            {
+                Id = 4,
+                Asked = "How much luggage is included?",
+                Answer = "1",
+                Answered = true,
+                Category = c3,
+                AskedBy = "Frida",
+                Email = "frida9@yolo.net",
+                IsFAQ = true
+            };
+
             context.Categories.Add(c1);
             context.Categories.Add(c2);
+            context.Categories.Add(c3);
 
             context.Questions.Add(q1);
             context.Questions.Add(q2);
+            context.Questions.Add(q3);
+            context.Questions.Add(q4);
+            context.Questions.Add(q5);
 
             context.SaveChanges();
 

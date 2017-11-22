@@ -22,8 +22,8 @@ var CreateComponent = (function () {
         this.submitted = false;
         this.form = fb.group({
             id: [""],
-            name: [null, forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.pattern("[a-zA-Z������\\-. ]{2,30}")])],
-            asked: [null, forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.pattern("[a-zA-Z������\\-. ]{2,300}")])],
+            name: [null, forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.pattern("[a-zA-ZøæåØÆÅ\\-. ]{2,30}")])],
+            asked: [null, forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.pattern("[a-zA-ZøæåØÆÅ\\-.\n\r ]{2,300}")])],
             category: [null, forms_1.Validators.compose([forms_1.Validators.required])],
             email: [null, forms_1.Validators.compose([forms_1.Validators.required, forms_1.Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])]
         });

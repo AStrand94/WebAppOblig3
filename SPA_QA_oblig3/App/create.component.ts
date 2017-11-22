@@ -23,7 +23,7 @@ export class CreateComponent {
         this.form = fb.group({
             id: [""],
             name: [null, Validators.compose([Validators.required, Validators.pattern("[a-zA-ZøæåØÆÅ\\-. ]{2,30}")])],
-            asked: [null, Validators.compose([Validators.required, Validators.pattern("[a-zA-ZøæåØÆÅ\\-. ]{2,300}")])],
+            asked: [null, Validators.compose([Validators.required, Validators.pattern("[a-zA-ZøæåØÆÅ\\-.\n\r ]{2,300}")])],
             category: [null, Validators.compose([Validators.required])],
             email: [null, Validators.compose([Validators.required, Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")])]
         });
@@ -35,8 +35,6 @@ export class CreateComponent {
     }
 
     submitQuestion() {
-
-
         
         let question = new Question(
             -1,

@@ -27,7 +27,7 @@
             "ngx-accordion": "node_modules/ngx-accordion",
         },
         // packages tells the System loader how to load when no filename and/or no extension
- packages: {
+        packages: {
             app: {
                 main: './main.js',
                 defaultExtension: 'js'

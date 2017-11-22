@@ -19,6 +19,7 @@ var QuestionsComponent = (function () {
         this.name = 'QuestionsComponent';
         this.questions = new Array();
         this.categories = new Array();
+        this.query = '';
     }
     QuestionsComponent.prototype.ngOnInit = function () {
         this.collectQuestions();

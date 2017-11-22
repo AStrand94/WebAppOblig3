@@ -16,6 +16,8 @@ var app_component_1 = require("./app.component");
 var router_1 = require("@angular/router");
 var ngx_accordion_1 = require("ngx-accordion");
 var questions_component_1 = require("./questions.component");
+var SearchPipe_1 = require("./SearchPipe");
+var forms_2 = require("@angular/forms");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -23,15 +25,15 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.ReactiveFormsModule, ngx_accordion_1.AccordionModule,
+        imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.ReactiveFormsModule, ngx_accordion_1.AccordionModule, forms_2.FormsModule,
             router_1.RouterModule.forRoot([
                 { path: 'list', component: list_component_1.QuestionList },
                 { path: 'create', component: create_component_1.CreateComponent },
                 { path: 'questions', component: questions_component_1.QuestionsComponent } /*,
                 { path: '**', component: QuestionList }*/
-            ])
+            ]),
         ],
-        declarations: [list_component_1.QuestionList, create_component_1.CreateComponent, questions_component_1.QuestionsComponent, app_component_1.AppComponent],
+        declarations: [list_component_1.QuestionList, create_component_1.CreateComponent, questions_component_1.QuestionsComponent, app_component_1.AppComponent, SearchPipe_1.SearchPipe],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

@@ -111,6 +111,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\WebAppH17Oblig3 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -160,6 +161,7 @@
     <TypeScriptCompile Include="App\main.ts" />
     <TypeScriptCompile Include="App\Question.ts" />
     <TypeScriptCompile Include="App\questions.component.ts" />
+    <TypeScriptCompile Include="App\SearchPipe.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
