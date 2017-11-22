@@ -8,3 +8,4 @@ Siste view'et er for å kunne sende inn spørsmål. Her blir alle felt validert 
 
 Løsningen ligger også på Azure: http://webapph17oblig3.azurewebsites.net/
 
+Andreas Strand s305036
