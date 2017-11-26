@@ -56,7 +56,7 @@ namespace SPA_QA_oblig3.Models
             {
                 Id = 2,
                 Asked = "How do i get a refund?",
-                Answer = "No clue",
+                Answer = "Send us an email with your reference, payment information and name, to info@skytravel.com",
                 Answered = true,
                 Category = c2,
                 AskedBy = "Fridtjof",
@@ -68,7 +68,7 @@ namespace SPA_QA_oblig3.Models
             {
                 Id = 3,
                 Asked = "When do you get flights to USA?",
-                Answer = "Tomorrow",
+                Answer = "During the next month",
                 Answered = true,
                 Category = c1,
                 AskedBy = "Per",
@@ -80,7 +80,7 @@ namespace SPA_QA_oblig3.Models
             {
                 Id = 4,
                 Asked = "How much luggage is included?",
-                Answer = "1",
+                Answer = "Only 1 luggage is included, at max 20 kg",
                 Answered = true,
                 Category = c3,
                 AskedBy = "Frida",
